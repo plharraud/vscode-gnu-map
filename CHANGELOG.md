@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.1.1 Add Cross Reference Table heading
+
+- Adds styling for Cross Reference Table heading
+
 ## v1.1.0 Additional keywords and path formats
 
 - Adds syntax highlighting for additional linker script macros and other compiler generated tags.
