@@ -49,7 +49,7 @@ class SymbolParser implements vscode.DocumentSymbolProvider {
 
 			const section = sections[sections.length - 1];
 
-			const heading = line.match(/^(Discarded input sections|Archive member included to satisfy reference by file \(symbol\)|Memory Configuration|Linker script and memory map|Allocating common symbols)$/);
+			const heading = line.match(/^(Discarded input sections|Archive member included to satisfy reference by file \(symbol\)|Memory Configuration|Linker script and memory map|Allocating common symbols|Cross Reference Table)$/);
 			if (heading) {
 				// End the previous section on the previous line:
 				if (section) {
