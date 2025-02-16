@@ -100,7 +100,7 @@ class SymbolParser implements vscode.DocumentSymbolProvider {
 					const entry = new vscode.DocumentSymbol(symbol[1], '', vscode.SymbolKind.Field, range, range);
 					if (symbol[2]) {
 						entry.detail = formatAddr(symbol[2]);
-					} else {
+					} else if (section.name !== "Cross Reference Table") {
 						continuesOnNextLine = entry;
 					}
 
