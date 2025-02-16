@@ -80,7 +80,7 @@ class SymbolParser implements vscode.DocumentSymbolProvider {
 				}
 
 				if (!section.entries.length) {
-					const tableHeaders = line.match(/^(Name\s+Origin\s+Length\s+Attributes|Common\s+symbol\s+size\s+file)$/);
+					const tableHeaders = line.match(/^(Name\s+Origin\s+Length\s+Attributes|Common\s+symbol\s+size\s+file|Symbol\s+File)$/);
 					if (tableHeaders) {
 						return; // Ignore header
 					}
